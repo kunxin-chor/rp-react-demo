@@ -115,7 +115,7 @@ export default function App() {
         {
           // if the review we are rendering is not being edited, display it normally
           // if the review we are rendering is being edited, we will display a form instead
-          reviews.map((review, index) => <li className="list-group-item">
+          reviews.map((review, index) => <li className="list-group-item" key={review.id}>
             {index === editIndex ? <>
               <h3>Update Review</h3> 
               {renderForm()}
