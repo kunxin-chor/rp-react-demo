@@ -61,6 +61,9 @@ export default function App() {
                   initialRestaurant = {review.restaurant}
                   initialReview = {review.review}
                   initialRating = {review.rating}
+                  handleSubmit={handleSubmit}
+                  isEditing={true}
+
                />
             </> :
              <Review review={review}
