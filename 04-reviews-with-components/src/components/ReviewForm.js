@@ -4,7 +4,7 @@ export default function ReviewForm(props) {
 
     const [restaurant, setRestaurant] = useState(props.initialRestaurant ?? "");
     const [review, setReview] = useState(props.initialReview ?? "");
-    const [rating, setRating] = useState(props.rating ?? 3);
+    const [rating, setRating] = useState(props.initialRating ?? 3);
 
     return (<div>
         <input
